@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div>
+        <img
+          src="https://krs.kiit.ac.in/assets/KRS.b5e08628.png"
+          alt=""
+          height="50px"
+        />
+      </div>
+      <div class="list">
+        <a class="links" href="index.html">Home</a>
+        <a class="links" href="index.html#about">About Us</a>
+        <a class="links" href="#footer">Contact Us</a>
+      </div>
+      <div class="btnn">
+        <a class="btnn1" href="">Login</a>
+        <a class="btnn2" href="">Register</a>
+      </div>
+    </div>
+
+    <div class="register">
+      <div class="register-box">
+        <h1><u>REGISTRATION FORM</u></h1>
+        <br />
+        <form id="regform">
+          <div class="reg-box">
+            <label><b>Name:</b></label>
+            <input 
+            class="form-input"
+            type="text" 
+            name="name" 
+            placeholder="Enter name here"/>
+            <div class="error" style="color:red" id="nameErr"></div>
+          </div><br>
+          <div class="reg-box">
+            <label><b>Phone:</b></label>
+            <input 
+            class="form-input"
+            type="text" name="phone" maxlength="10" 
+            placeholder="Enter phone no. here"/>
+            <div class="error" id="phoneErr"></div>
+          </div><br>
+          <div class="reg-box">
+            <label><b>Email:</b></label>
+            <input
+            class="form-input" 
+            type="text" name="email" 
+            placeholder="Enter your email here"/>
+            <div class="error" id="emailErr"></div>
+          </div><br>
+          <div class="reg-box">
+            <label><b>Gender:</b></label>
+            <div class="form-inline">
+              <label
+                ><input type="radio" name="gender" value="male" /> Male</label
+              >
+              <label
+                ><input type="radio" name="gender" value="female" />
+                Female</label
+              >
+            </div>
+            <div class="error" id="genderErr"></div>
+          </div><br>
+          <div class="reg-box">
+            <label><b>Qualification:</b></label>
+            <div class="form-inline">
+              <label
+                ><input type="radio" name="qualification" value="student" /> Student</label
+              >
+              <label
+                ><input type="radio" name="qualification" value="teacher" />
+                Teacher</label
+              >
+            </div>
+            <div class="error" id="qualificationErr"></div>
+          </div><br>
+
+          <div class="reg-box">
+            <label><b>Course:</b></label><br>
+            <div class="form-inline">
+              <label
+                ><input type="radio" name="course" value="webdevelopement" /> Web Developement</label
+              >
+              <label
+                ><input type="radio" name="course" value="appdevelopement" />
+                App Developement</label
+              >
+            </div>
+            <div class="error" id="courseErr"></div>
+          </div><br>
+          <div class="reg-box">
+            <label><b>Country:</b></label>
+            <select name="country">
+              <option>India</option>
+              <option>Australia</option>
+              <option>Japan</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+            </select>
+            <div class="error" id="countryErr"></div>
+          </div><br>
+          <div class="reg-box">
+            <label> <ul type="none">
+                <li><b>Conditions:</b>
+                    <ol type="1">
+                        <li>Each User shall register only once.</li>
+                        <li>It is the User's responsibility to make sure that she/he has sufficient access to Internet to participate to the activities at the desired extent.</li>
+                    </ol>
+                </li></ul>
+                <br><input type="checkbox" name="condition" value="all" />"I have read and agreed to all conditions"</label>
+            <div class="error" id="conditionErr"></div>
+          </div>
+          <div class="reg-box">
+            <label for="comm"><b>Comments:</b></label>
+            <textarea
+            name="comment"
+          id="comm"
+          placeholder="Enter your feedback here"
+          cols="15"
+          rows="3"
+          ></textarea>
+          <div class="error" id="commentErr"></div>
+          <br><br>
+            <div>
+                <button type="button" id="registerButton" class="rbtn">Save changes</button>
+                <button type="button" class="rbtn">Clear</button>
+              </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <center><hr /></center>
+
+    <div class="footer" id="footer">
+      <div>
+        <img src="https://krs.kiit.ac.in/assets/KRS.b5e08628.png" alt="" />
+      </div>
+      <div class="contact-links">
+        <div>
+          <h2>Sitemap</h2>
+          <h3>Home</h3>
+          <h3>About Us</h3>
+          <h3>Conatct Us</h3>
+        </div>
+        <div>
+          <h2>Contact Us</h2>
+          <h3>Instagram</h3>
+          <h3>Facebook</h3>
+          <h3>Youtube</h3>
+          <h3>Email</h3>
+        </div>
+      </div>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>
